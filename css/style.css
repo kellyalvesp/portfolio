@@ -3,87 +3,19 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -91,128 +23,140 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-
-body {
+} body {
 	line-height: 1;
 }
-
-ol,
-ul {
+ol, ul {
 	list-style: none;
 }
-
-blockquote,
-q {
+blockquote, q {
 	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
 	content: '';
 	content: none;
-}
-
-table {
+} table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/*==============================================
-                    GERAL
-================================================ */
-html {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: calc(10px + 1vw);
+/*==================
+     GERAL
+==================*/
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(10px + 1vw);
 }
-
-a {
-	color: black;
-	text-decoration: none;
+a{
+    color: black;
+    text-decoration: none;
 }
-
-/*=========================================
-                TOPO
-=========================================*/
+main{
+	margin: 0 20vw 0 20vw;
+}
+/*=================
+    TOPO
+=================*/
 header {
 	margin: 5vw 5vw 5vw 5vw;
 }
-
-header nav ul {
-	display: flex;
-	justify-content: right;
-	/*=========================================
-	TOPO
-=========================================*/
-}
-
-header nav ul li {
+header nav ul{
+    display: flex;
+    justify-content: right;
+} header nav ul li {
 	margin: 0 10px 0 10px;
 }
-
-header nav ul li.atual a {
+header nav ul li.atual a{
 	color: #ff6464;
 }
-
-/*=========================================
-                CONTEÚDO 
-=========================================*/
-
-main.works {
-	margin: 0 15vw 0 15vw;
-}
-
-main h1.works {
+/*==================
+     CONTEÚDO - WORKS
+==================*/
+main.works h1{
 	font-size: 1.5rem;
 }
-
-main.works section {
-	border-bottom: 1px solid gray;
-	padding: 0 0 2vw 0;
+main.works section{
+	border-bottom: 2px solid gray;
+	padding: 0 0 4vw 0 ;
 }
-
-main.works section:last-child {
+main.works section:last-child{
 	border: none;
 }
-
-main.works section h2 {
+main.works section h2{
 	font-size: 1rem;
 	margin: 2vw 0 0 0;
-	font-weight: bold
+	font-weight: bold;
 }
-
-main.works section p {
+main.works section p{
 	margin: 1.5vw 0 0 0;
 }
-
-main.works section p span {
+main.works section p span{
 	background: #ff6464;
-	border-radius: 15px;
+	border-radius: 20px;
 	color: white;
 	padding: 3px 10px 3px 10px;
 }
-
-/*=========================================
-                FOOTER
-=========================================*/
-
-footer {
+/*==================
+     CONTEÚDO - PAGINA INICIAL
+==================*/
+main section.banner{
+	display: flex;
+	margin: 3vw 0 1vw 0;
+}
+section.banner h1{
+	font-weight: bold;
+	font-size: 2rem
+}
+section.banner p {
+	margin: 1.5vw 4vw 1.5vw 0;
+}
+section.banner button{
+	background: #ff6464;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	border: none;
+	font-size: 1.5rem ;
+}
+section.rt-post{
+	background: #edf4fa;
+	padding: 1vw 2vw 1vw 1vw;
+}
+section.rt-post h2 {
+	font-size: 1.8rem;
+	padding: 3vw 5vw 0vw 3vw;
+}
+section.rt-post ul{
+	display: flex;
+	padding: 3vw 5vw 3vw 5vw;
+}
+section.rt-post ul li {
+	background: white;
+	margin: 0vw 1.4vw 0vw 1.4vw;
+	padding: 1vw 1vw 1vw 1vw;
+	border-radius: 20px;
+}
+section.rt-post ul li h3{
+	font-weight: bold;
+	font-size: 1.3rem;
+	padding: 2vw 1vw ;
+}
+/*==================
+     FOOTER
+==================*/
+footer{
 	text-align: center;
-	margin: 2vw 0 2vw 0;
+	margin: 4vw 0 4vw 0;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+footer ul li {
+	margin: 0 10px 10px 10px;
+	font-size: 1.5rem;
 }
