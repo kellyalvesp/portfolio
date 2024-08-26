@@ -67,38 +67,39 @@ main{
 header {
 	margin: 5vw 5vw 5vw 5vw;
 }
-header nav ul{
+header nav ul 
+{
     display: flex;
     justify-content: right;
 }
 header nav ul li {
 	margin: 0 10px 0 10px;
 }
-header nav ul li.atual a{
+header nav ul li.atual a {
 	color: #ff6464;
 }
 /*==================
      CONTEÚDO - WORKS
 ==================*/
-main.works h1{
+main.works h1 {
 	font-size: 1.5rem;
 }
-main.works section{
+main.works section {
 	border-bottom: 2px solid gray;
 	padding: 0 0 4vw 0 ;
 }
-main.works section:last-child{
+main.works section:last-child {
 	border: none;
 }
-main.works section h2{
+main.works section h2 {
 	font-size: 1rem;
 	margin: 2vw 0 0 0;
 	font-weight: bold;
 }
-main.works section p{
+main.works section p {
 	margin: 1.5vw 0 0 0;
 }
-main.works section p span{
+main.works section p span {
 	background: #ff6464;
 	border-radius: 20px;
 	color: white;
@@ -107,25 +108,25 @@ main.works section p span{
 /*==================
      CONTEÚDO - PAGINA INICIAL
 ==================*/
-main section.banner{
+main section.banner {
 	display: flex;
 	margin: 3vw 0 1vw 0;
 }
-section.banner h1{
+section.banner h1 {
 	font-weight: bold;
 	font-size: 2rem
 }
 section.banner p {
 	margin: 1.5vw 4vw 1.5vw 0;
 }
-section.banner button{
+section.banner button {
 	background: #ff6464;
 	color: white;
 	padding: 10px 20px 10px 20px;
 	border: none;
 	font-size: 1.5rem ;
 }
-section.rt-post{
+section.rt-post {
 	background: #edf4fa;
 	padding: 1vw 2vw 1vw 1vw;
 }
@@ -143,10 +144,33 @@ section.rt-post ul li {
 	padding: 1vw 1vw 1vw 1vw;
 	border-radius: 20px;
 }
-section.rt-post ul li h3{
+section.rt-post ul li h3 {
 	font-weight: bold;
 	font-size: 1.3rem;
 	padding: 2vw 1vw ;
+}
+section.rt-post ul li p {
+	margin: 2vw o 2vw 0;
+}
+section.ft-works h2 {
+	margin: 3vw 0vw 3vw 0;
+} 
+section.ft-works ul {
+	margin: 2vw 5vw 2vw 5vw;
+	display: flex;
+}
+section.ft-works ul li h3 {
+	font-weight: bold;
+	margin: 0.5vw 1vw 1vw 1vw;
+	font-size: 1.5rem;
+}
+section.ft-works ul li p span {
+	background: #142850;
+	border-radius: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 3px 10px 3px 10px;
 }
 /*==================
      FOOTER
